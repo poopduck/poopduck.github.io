@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Other</title>
 </head>
 <body>
@@ -17,9 +20,13 @@
     </header>
     <main>
         <div class="gallery">
-            <a href="pictures/yoink.png">
-                <img src="pictures/yoink.png" width = "300" height="auto">
+            <a href="images/yoink.png" data-lightbox="mygallery" data-title="yoink">
+                <img src="images/yoink.png">
                 <figcaption>yoink</figcaption>
+            </a>
+            <a href="images/pawprints.png" data-lightbox="mygallery" data-title="pawprints on fresh snow">
+                <img src="images/pawprints.png">
+                <figcaption>pawprints on fresh snow</figcaption>
             </a>
         </div>
         
