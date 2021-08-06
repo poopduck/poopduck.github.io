@@ -1,20 +1,135 @@
-.gallery {
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+}
+
+a:hover {
+    color: #00a4d6;
+}
+
+body {
     width: 80%;
-    margin: 10px auto;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    font-family: 'Courier Prime', monospace;
+    font-weight: 575;
+    font-size: larger;
+    margin: 20px auto;
+}
+
+header{
+    border-bottom: 2px solid #E2E8F0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 20px;
+}
+
+.home-icon:hover, .menu-icon:hover, .active.home-icon {
+    filter: invert(23%) sepia(97%) saturate(1650%) hue-rotate(196deg) brightness(101%) contrast(105%);
+}
+
+.active {
+    color: #00a4d6;
+}
+
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    margin-left: 20px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    
+    .nav-items {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        border-bottom: 1px solid #E2E8F0;
+    }
+
+    .nav-items.active {
+        left: 0;
+    }
+
+    .menu-icon.active {
+        filter: invert(23%) sepia(97%) saturate(1650%) hue-rotate(196deg) brightness(101%) contrast(105%);
+    }
+
+    .nav-link {
+        margin: 20px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+figcaption {
+    text-align: center;
+    display: table-caption;
+    caption-side: bottom;
+}
+
+.gallery {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    flex:auto;
+    flex: auto;
+    margin-top: 10px;
+}
+
+.gallery a {
+    display: table;
+    vertical-align: top;
+    height: 0.1%;
 }
 
 .gallery img {
     width: 320px;
     height: auto;
+	transition: .2s ease-in-out;
 }
 
 .gallery img:hover {
-    transform: scale(1.05);
     filter: grayscale(1);
+	transform: scale(1.02);
 }
+
