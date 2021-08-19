@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 
 * {
     margin: 0;
@@ -16,17 +17,49 @@ a:hover {
     color: #00a4d6;
 }
 
+.cornerimg {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+.cornerimg img {
+    height: 175px;
+    width: auto;
+}
+
 body {
     width: 80%;
     margin: auto;
-    text-align: center;
 }
 
 p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 575;
+    font-size: large;
+    /* margin: 20px auto; */
+    line-height: 25px; 
+    margin: 8px 0;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.welcome p {
     font-family: 'Courier Prime', monospace;
     font-weight: 575;
     font-size: larger;
-    margin: 20px auto;
+}
+
+article {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.QandA {
+    margin-bottom: 50px;
 }
 
 header{
@@ -98,6 +131,12 @@ nav {
         cursor: pointer;
     }
 
+    .cornerimg {
+        position: relative;
+        right: 0px;
+        bottom: 0px;
+    }
+
 }
 
 figcaption {
@@ -113,7 +152,8 @@ figcaption {
     justify-content: center;
     gap: 10px;
     flex: auto;
-    margin-top: 10px;
+    /* text-align: center; */
+    margin-top: 20px;
 }
 
 .gallery a {
@@ -122,14 +162,21 @@ figcaption {
     height: 0.1%;
 }
 
+.gallery img.tallimg {
+    width: auto;
+    height: 300px;
+}
+
 .gallery img {
     width: 320px;
     height: auto;
-	transition: .2s ease-in-out;
+	transition: .05s ease-in-out;
 }
 
+
+
 .gallery img:hover {
-    filter: grayscale(1);
+    /* filter: grayscale(1); */
 	transform: scale(1.02);
 }
 
