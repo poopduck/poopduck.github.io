@@ -5,7 +5,7 @@ I am a git noob so the commit messages are all over the place.
 
 To view the website, go here: https://poopduck.github.io/
 
-It was last updated on this date: 9/20/2020
+It was last updated on this date: 9/20/2021
 
 SOURCES:
 - I learned CSS + HTML from Codeacademy 
